@@ -24,11 +24,11 @@ class TrafficLightElement:
     def IsGreenLight(self) -> bool:
         return self.__type == TrafficLightElement.GreenLightValue
 
-    def __init__(self, __type: str) -> None:
-        if __type not in [TrafficLightElement.RedLightValue, TrafficLightElement.OrangeLightValue, TrafficLightElement.GreenLightValue]:
-            raise Exception(f"__type {__type} not allowed.")
+    def __init__(self, type: str) -> None:
+        if type not in [TrafficLightElement.RedLightValue, TrafficLightElement.OrangeLightValue, TrafficLightElement.GreenLightValue]:
+            raise Exception(f"type {__type} not allowed.")
 
-        self.__type = __type
+        self.__type = type
         self.initTimer()
 
     def Cycle(self) -> None:

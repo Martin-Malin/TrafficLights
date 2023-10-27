@@ -60,4 +60,4 @@ def multipleCars(initialState:str, nbIterations:int):
         print(road)
 
 
-multipleCars("GC0.G...R.C.O....G.", 16)
+multipleCars("GCO.G...R.C.O....G.", 16)
